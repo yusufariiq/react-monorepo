@@ -1,0 +1,18 @@
+{
+  "name": "lerna-react-monorepo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "lerna run dev --scope=web-client && lerna run start --scope=server-api",
+    "test": "lerna run test --scope=web-client && lerna run test --scope=server-api",
+    "new-version": "lerna version --conventional-commits --yes",
+    "diff": "lerna diff"
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "devDependencies": {
+    "lerna": "^9.0.0"
+  }
+}
