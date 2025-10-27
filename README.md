@@ -15,28 +15,26 @@ cd /d:/Project/lerna-react-basic
 ```bash
 # install root deps
 npm install
-# bootstrap Lerna packages (links local packages & installs package deps)
-npx lerna bootstrap
 ```
 
 ## Run the React app(s)
 Start a single package (replace <package-name> with the package folder name from /packages):
 ```bash
-npx lerna run start --scope <package-name> --stream
+lerna run start --scope <package-name> --stream
 ```
 Start all start scripts in parallel:
 ```bash
-npx lerna run start --parallel --stream
+lerna run start
 ```
 
 ## Build
 Build all packages:
 ```bash
-npx lerna run build
+lerna run build
 ```
 Build a single package:
 ```bash
-npx lerna run build --scope <package-name> --stream
+lerna run build --scope <package-name> --stream
 ```
 
 ## Add a new React package
