@@ -3553,8 +3553,8 @@ __metadata:
   dependencies:
     antd: "npm:^5.27.6"
   peerDependencies:
-    react: ^19.2.0
-    react-dom: ^19.2.0
+    react: "*"
+    react-dom: "*"
   languageName: unknown
   linkType: soft
 
