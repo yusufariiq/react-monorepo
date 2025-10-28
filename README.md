@@ -2,7 +2,7 @@
 
 ## Prerequisites
 - Node.js (16+ recommended)
-- npm (or yarn)
+- yarn
 - Git
 
 ## Clone repository
@@ -11,10 +11,13 @@ git clone https://github.com/yusufariiq/react-monorepo.git
 cd /d:/Project/lerna-react-basic
 ```
 
+## Clean all lerna projects
+`lerna clean -y`
+
 ## Install dependencies
 ```bash
 # install root deps
-npm install
+yarn install
 ```
 
 ## Run the React app(s)
@@ -41,19 +44,20 @@ lerna run build --scope <package-name> --stream
 Option A — create with Create React App:
 ```bash
 npx create-react-app packages/my-app
-# then link & install
-npx lerna bootstrap
 ```
 Option B — use Lerna to scaffold (if preferred):
 ```bash
 npx lerna create my-app packages/my-app
-# edit packages/my-app to use React, then bootstrap
-npx lerna bootstrap
 ```
 
 ## Add a dependency to a package
 ```bash
-npx lerna add axios --scope=<package-name>
+yarn workspace <package-name> add axios
+```
+
+## Add dev dependency
+```bash
+yarn workspace <package-name> add jest -D
 ```
 
 Notes
