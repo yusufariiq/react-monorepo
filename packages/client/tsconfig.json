@@ -3,5 +3,19 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    // "paths": {
+    //     "@assets/*": ["assets/*"],
+    //     "@components/*": ["components/*"],
+    //     "@dummy/*": ["dummy/*"],
+    //     "@libraries/*": ["libraries/*"],
+    //     "@models/*": ["models/*"],
+    //     "@pages/*": ["pages/*"],
+    //     "@routes/*": ["routes/*"],
+    //     "@utils/*": ["utils/*"],
+    //     "@helpers/*": ["helpers/*"],
+    //     "@interfaces/*": ["interfaces/*"]
+    //   },
+  },
 }

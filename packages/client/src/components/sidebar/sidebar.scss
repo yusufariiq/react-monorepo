@@ -1,0 +1,46 @@
+.sidebar {
+  background: #164a7f;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+    span {
+      color: white;
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+  }
+  
+.sidebar-menu {
+    background: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .ant-menu-item {
+      color: white;
+
+      &:hover {
+        color: #f0f0f0;
+      }
+    }
+
+    .ant-menu-item-selected {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.2); 
+    }
+    
+    .ant-menu-title-content {
+      color: inherit; 
+    }
+  }
+}
